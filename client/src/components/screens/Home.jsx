@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Card from "../Card"
 import Header from "../shared/Header"
 import Footer from "../shared/Footer"
