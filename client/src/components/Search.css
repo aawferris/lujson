@@ -1,7 +1,6 @@
 .search-form {
   padding-top: 100px;
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   margin: 5px 0 5px 15%;
 }

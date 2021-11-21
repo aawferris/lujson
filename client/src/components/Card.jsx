@@ -40,9 +40,10 @@ export default function Card() {
   const handleClick = event => {
     post.map((post, idx) =>
       <Post
-          title={post.title}
+        title={post.title}
+        name={user.name}
           body={post.body}
-          id={post.userId}
+          id={post.id}
           index={idx}
       />
     )
@@ -51,18 +52,13 @@ export default function Card() {
   return (
     <div id="main-box">
       <Search onSubmit={handleSubmit} onChange={handleSearch} />
-      {/* {user.map((user, idx) => idx < 10 ?
-        <Post
-          name={user.name}
-        />
-        : null
-      )} */}
 
       {post.map((post, index) => index < 10 ?
         <Post
           title={post.title}
+          name={user.name}
           body={post.body}
-          id={post.userId}
+          id={post.id}
           index={index}
         />
         : null 

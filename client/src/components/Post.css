@@ -9,6 +9,7 @@
 .title {
   font-size: 25px;
   margin: 0;
+  text-transform: capitalize;
 }
 
 .name {
@@ -20,6 +21,10 @@
 .body {
   font-size: 14px;
   margin: 0;
+}
+
+.body::first-letter {
+  text-transform: capitalize;
 }
 
 .title:hover {

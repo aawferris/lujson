@@ -9,7 +9,7 @@ const Search = (props) => {
                 className="search-input"
                 value={props.value}
                 onChange={(e) => props.onChange(e)}
-                name="Search"
+                name="search"
                 placeholder="Filter by Author"
                 type="text"
                 autoFocus
