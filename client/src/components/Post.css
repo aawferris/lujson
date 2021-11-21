@@ -1,0 +1,23 @@
+.post-box {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  max-width: 70vw;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 25px;
+  margin: 0;
+}
+
+.name {
+  font-size: 18px;
+  font-style: bold;
+  margin: 0;
+}
+
+.body {
+  font-size: 14px;
+  margin: 0;
+}
