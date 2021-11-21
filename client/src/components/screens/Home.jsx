@@ -5,6 +5,7 @@ import Footer from "../shared/Footer"
 import "./Home.css"
 
 export default function Home() {
+
   return (
     <div id="main-box">
       <Header />
