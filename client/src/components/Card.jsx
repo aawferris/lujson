@@ -42,9 +42,9 @@ export default function Card() {
       <Post
         title={post.title}
         name={user.name}
-          body={post.body}
-          id={post.id}
-          index={idx}
+        body={post.body}
+        id={post.id}
+        index={idx}
       />
     )
   }

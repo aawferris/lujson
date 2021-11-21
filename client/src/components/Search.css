@@ -25,3 +25,9 @@
 .search-input::placeholder {
   letter-spacing: 0.3px;
 }
+
+@media screen and (max-width: 376px) {
+  .search-input {
+    width: 80%;
+  }
+}

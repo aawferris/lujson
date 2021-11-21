@@ -1,3 +1,10 @@
 #main-title {
   margin: 5px 0 -10vh 15vw;
 }
+
+@media screen and (max-width: 376px) {
+  #main-card-box {
+    display: flex;
+    flex-direction: column;
+  }
+}
