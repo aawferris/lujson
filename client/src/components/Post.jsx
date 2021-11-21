@@ -9,7 +9,7 @@ export default function Post(props) {
   return (
     <div className="post-box">
       <h1 className="title">{truncate(props?.title, 25)}</h1>
-      <h2 className="name">{props.name}</h2>
+      <h2 className="name">{props?.name}</h2>
       <p className="body">{truncate(props?.body, 250)}</p>
     </div>
   )

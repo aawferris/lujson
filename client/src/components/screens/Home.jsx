@@ -6,12 +6,12 @@ import Search from "../Search"
 import "./Home.css"
 
 export default function Home(props) {
-  const [queriedProducts, setQueriedProducts] = useState([])
+
 
   return (
     <div id="main-box">
       <Header />
-      {/* <input type="text" placeholder="Search"/> */}
+      <h1 id="main-title">Posts</h1>
       <div id="main-card-box">
         <Card />
       </div>

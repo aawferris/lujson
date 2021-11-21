@@ -33,13 +33,31 @@ export default function Card() {
   const handleSubmit = event => event.preventDefault()
 
   const handleSearch = event => {
-    const newQueriedProducts = post.filter(post => post.id.includes(event.target.value))
+    const newQueriedProducts = post.filter(post => post.id.toLowerCase().includes(event.target.value.toLowerCase()))
     setQueriedProducts(newQueriedProducts)
+  }
+
+  const handleClick = event => {
+    post.map((post, idx) =>
+      <Post
+          title={post.title}
+          body={post.body}
+          id={post.userId}
+          index={idx}
+      />
+    )
   }
 
   return (
     <div id="main-box">
       <Search onSubmit={handleSubmit} onChange={handleSearch} />
+      {/* {user.map((user, idx) => idx < 10 ?
+        <Post
+          name={user.name}
+        />
+        : null
+      )} */}
+
       {post.map((post, index) => index < 10 ?
         <Post
           title={post.title}
@@ -47,9 +65,9 @@ export default function Card() {
           id={post.userId}
           index={index}
         />
-        : null
+        : null 
       )}
-      <button id="load-btn">Load more</button>
+      <button id="load-btn" onClick={handleClick}>Load more</button>
     </div>
   )
 }

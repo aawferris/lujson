@@ -3,7 +3,7 @@
   flex-direction: column;
   width: fit-content;
   max-width: 70vw;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .title {
