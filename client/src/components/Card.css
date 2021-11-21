@@ -1,0 +1,12 @@
+#main-box {
+  display: flex;
+  flex-direction: column;
+}
+
+#load-btn {
+  width: fit-content;
+  margin: 20px auto 0 auto;
+  border: none;
+  padding: 5px;
+  box-shadow: 1px 1px 1px 1px black;
+}

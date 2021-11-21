@@ -3,16 +3,18 @@ import './Search.css'
 
 const Search = (props) => {
     return (
-        <form className="search-form" onSubmit={(e) => props.onSubmit(e)}>
+      <form className="search-form" onSubmit={(e) => props.onSubmit(e)}>
+        
             <input
                 className="search-input"
                 value={props.value}
                 onChange={(e) => props.onChange(e)}
                 name="Search"
-                placeholder="Search"
+                placeholder="Filter by Author"
                 type="text"
                 autoFocus
-            />
+        />
+          <img src="./assets/magnifier.png" alt="magnifying glass for search" id="magnifier"/>
         </form>
     )
 }

@@ -3,6 +3,7 @@ import axios from "axios"
 
 import Post from "./Post"
 import Search from './Search'
+import "./Card.css"
 
 export default function Card() {
 
@@ -48,7 +49,7 @@ export default function Card() {
         />
         : null
       )}
-      <button>Load more</button>
+      <button id="load-btn">Load more</button>
     </div>
   )
 }
