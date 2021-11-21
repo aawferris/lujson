@@ -1,0 +1,9 @@
+#header {
+  display: flex;
+  text-align: left;
+  background-color: #000;
+  color: white;
+  font-size: 1vh;
+  padding: 2vh 2vw;
+  margin-bottom: 20px;
+}

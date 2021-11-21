@@ -1,8 +1,13 @@
-import logo from "./logo.svg";
+import React from "react";
+import Home from "./components/screens/Home";
 import "./App.css";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <Home />
+    </div>
+  );
 }
 
 export default App;
