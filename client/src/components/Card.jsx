@@ -26,7 +26,6 @@ export default function Card() {
     fetchData()
   }, [])
 
-
   const handleSubmit = event => event.preventDefault()
 
   const handleSearch = event => {
