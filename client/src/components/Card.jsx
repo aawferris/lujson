@@ -9,14 +9,17 @@ export default function Card() {
 
   const [user, setUser] = useState([])
   const [post, setPost] = useState([])
+  const [data, setData] = useState({post: [], user: []})
   const [queriedProducts, setQueriedProducts] = useState([])
 
   useEffect(() => {
     const fetchData = async () => {
       const userResp = await axios.get("https://jsonplaceholder.typicode.com/users");
-      const postResp = await axios.get("https://jsonplaceholder.typicode.com/posts")
+      const postResp = await axios.get("https://jsonplaceholder.typicode.com/posts");
+      setData({post: postResp.data, user: userResp.data})
       setUser(userResp.data)
       setPost(postResp.data)
+      console.log(user, post)
       console.log(userResp.data, postResp.data)
     }
 
